@@ -1,8 +1,9 @@
-const express = require ("express");
-const routes = require("../src/routes");
+const express = require("express");
+const routes = require("./routes");
 
-const app = express();//chamando o metodo do express para usar JSON
+const app = express();
 
 app.use(express.json());
 app.use(routes);
+
 app.listen(3000);
